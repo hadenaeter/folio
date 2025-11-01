@@ -44,23 +44,23 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --radius: 0.625rem; /* Border radius */
+  --background: oklch(1 0 0); /* Page background */
+  --foreground: oklch(0.145 0 0); /* Text color */
+  --card: oklch(1 0 0); /* Card backgrounds */
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --primary: oklch(0.205 0 0); /* Brand color */
+  --primary-foreground: oklch(0.985 0 0); /* Text on primary */
+  --secondary: oklch(0.97 0 0); /* Secondary actions */
   --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
+  --muted: oklch(0.97 0 0); /* Subtle backgrounds */
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
+  --accent: oklch(0.97 0 0); /* Hover/focus states */
   --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
+  --destructive: oklch(0.577 0.245 27.325); /* Error/delete */
+  --border: oklch(0.922 0 0); /* Borders/dividers */
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
@@ -78,6 +78,8 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* Purpose: When .dark class is on <html>, these colors override the :root ones */
+/* Note: Colors are essentially inverted from light mode */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

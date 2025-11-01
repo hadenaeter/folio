@@ -7,14 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Add changes here.
+## [0.0.3] - 2025-11-01
+
+### Added
+
+- Comments to `globals.css` pointing out and describing theme variables.
+- To-do and details added to `README.md`.
 
 ## [0.0.2] - 2025-11-01
 
 ### Added
 
-- Topbar made with shadcn/ui
-- Placeholders for body and footer
+- Topbar made with shadcn/ui.
+- Placeholders for body and footer.
 
 ## [0.0.1] - 2025-10-31
 
