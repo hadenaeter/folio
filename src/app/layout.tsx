@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "@/components/layout/Footer";
+import Topbar from "@/components/layout/Topbar";
 
 export const metadata: Metadata = {
   title: "Haidar's Folio",
@@ -13,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Topbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
