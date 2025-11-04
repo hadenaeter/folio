@@ -42,3 +42,20 @@ next-env.d.ts
 
 # Code Editor
 .vscode
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+
+# Test videos
+*.mp4

@@ -6,12 +6,10 @@ import type * as React from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -20,12 +18,12 @@ export default function Topbar() {
   const isMobile = useIsMobile();
 
   return (
-    <header className="px-[10%]">
-      <NavigationMenu viewport={isMobile} className="container p-2">
+    <header className="flex justify-center z-20">
+      <NavigationMenu viewport={isMobile} className="container py-2">
         <NavigationMenuList className="gap-2.5">
           <NavigationMenuItem>
             <NavigationMenuTrigger>Home</NavigationMenuTrigger>
-            <NavigationMenuContent>
+            <NavigationMenuContent className="z-90 md:-translate-x-1/3">
               <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
@@ -43,14 +41,13 @@ export default function Topbar() {
                   </NavigationMenuLink>
                 </li>
                 <ListItem href="/" title="Resume / CV">
-                  See my resume.
+                  See my resume and CV
                 </ListItem>
                 <ListItem href="/" title="Certifications">
-                  Various certifications in Security, Tech, Networks, Cloud, and
-                  more.
+                  A+, Network+, Security+, CCNA, OSCP+
                 </ListItem>
                 <ListItem href="/" title="Education">
-                  My education from high school to now.
+                  VCE, Bachelor of Cybersecurity, Master of Cybersecurity
                 </ListItem>
               </ul>
             </NavigationMenuContent>
