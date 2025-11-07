@@ -18,8 +18,8 @@ export default function Topbar() {
   const isMobile = useIsMobile();
 
   return (
-    <header className="flex justify-center z-20">
-      <NavigationMenu viewport={isMobile} className="container py-2">
+    <header className="flex justify-center z-20 h-header-h">
+      <NavigationMenu viewport={isMobile} className="container">
         <NavigationMenuList className="gap-2.5">
           <NavigationMenuItem>
             <NavigationMenuTrigger>Home</NavigationMenuTrigger>
