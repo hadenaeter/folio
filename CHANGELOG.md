@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- New profile section under landing section, with placeholders for sub-sections.
+- New emblem image/banner at top of landing section.
+- Complete profile education section.
+
+### Changed
+
+- Updated `pnpm` packages to latest versions:
+    - `dependencies`: `next-video`
+    - `devDependencies`: `tailwindcss/postcss`, `tailwindcss`
+- Changed topbar text size up 1 level each (e.g. `sm` to `base`, `base` to `lg`).
+- Wrapped showcase video Aspect Ratio component with `<div>` wrapper.
+
+### Removed
+
+
+
 ## [0.0.5] - 2025-11-08
 
 ### Added

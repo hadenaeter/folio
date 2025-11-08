@@ -22,7 +22,9 @@ export default function Topbar() {
       <NavigationMenu viewport={isMobile} className="container">
         <NavigationMenuList className="gap-2.5">
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="text-base">
+              Home
+            </NavigationMenuTrigger>
             <NavigationMenuContent className="z-90 md:-translate-x-1/3">
               <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
@@ -34,7 +36,7 @@ export default function Topbar() {
                       <div className="mb-2 text-lg font-medium sm:mt-4">
                         About
                       </div>
-                      <p className="text-muted-foreground text-sm leading-tight">
+                      <p className="text-muted-foreground text-base leading-tight">
                         An introduction of me, my work, and more.
                       </p>
                     </a>
@@ -55,7 +57,7 @@ export default function Topbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className={navigationMenuTriggerStyle()}
+              className={(navigationMenuTriggerStyle(), "text-base")}
             >
               <Link href="/">Projects</Link>
             </NavigationMenuLink>
@@ -63,7 +65,7 @@ export default function Topbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className={navigationMenuTriggerStyle()}
+              className={(navigationMenuTriggerStyle(), "text-base")}
             >
               <Link href="/">Articles</Link>
             </NavigationMenuLink>
@@ -84,8 +86,8 @@ function ListItem({
     <li {...props}>
       <NavigationMenuLink asChild>
         <Link href={href}>
-          <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+          <div className="text-base leading-none font-medium">{title}</div>
+          <p className="text-muted-foreground line-clamp-2 text-base leading-snug">
             {children}
           </p>
         </Link>
